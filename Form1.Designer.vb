@@ -23,98 +23,104 @@ Partial Class frmString
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmString))
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtPalabra = New System.Windows.Forms.TextBox()
-        Me.txtTexto = New System.Windows.Forms.TextBox()
-        Me.lblMensaje = New System.Windows.Forms.Label()
-        Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.btnSiguiente = New System.Windows.Forms.Button()
-        Me.btnSalir = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.Location = New System.Drawing.Point(34, 29)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 65)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Palabra a buscar:"
-        '
-        'txtPalabra
-        '
-        Me.txtPalabra.Location = New System.Drawing.Point(147, 24)
-        Me.txtPalabra.Name = "txtPalabra"
-        Me.txtPalabra.Size = New System.Drawing.Size(100, 23)
-        Me.txtPalabra.TabIndex = 1
-        '
-        'txtTexto
-        '
-        Me.txtTexto.Location = New System.Drawing.Point(34, 78)
-        Me.txtTexto.Multiline = True
-        Me.txtTexto.Name = "txtTexto"
-        Me.txtTexto.ReadOnly = True
-        Me.txtTexto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtTexto.Size = New System.Drawing.Size(407, 139)
-        Me.txtTexto.TabIndex = 4
-        Me.txtTexto.TabStop = False
-        Me.txtTexto.Text = resources.GetString("txtTexto.Text")
-        '
-        'lblMensaje
-        '
-        Me.lblMensaje.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblMensaje.Location = New System.Drawing.Point(34, 248)
-        Me.lblMensaje.Name = "lblMensaje"
-        Me.lblMensaje.Size = New System.Drawing.Size(407, 35)
-        Me.lblMensaje.TabIndex = 5
-        '
-        'btnBuscar
-        '
-        Me.btnBuscar.Location = New System.Drawing.Point(276, 23)
-        Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
-        Me.btnBuscar.TabIndex = 2
-        Me.btnBuscar.Text = "Buscar"
-        Me.btnBuscar.UseVisualStyleBackColor = True
-        '
-        'btnSiguiente
-        '
-        Me.btnSiguiente.Enabled = False
-        Me.btnSiguiente.Location = New System.Drawing.Point(366, 23)
-        Me.btnSiguiente.Name = "btnSiguiente"
-        Me.btnSiguiente.Size = New System.Drawing.Size(75, 23)
-        Me.btnSiguiente.TabIndex = 3
-        Me.btnSiguiente.Text = "&Siguiente"
-        Me.btnSiguiente.UseVisualStyleBackColor = True
-        '
-        'btnSalir
-        '
-        Me.btnSalir.Location = New System.Drawing.Point(366, 315)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
-        Me.btnSalir.TabIndex = 6
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
-        '
-        'frmString
-        '
-        Me.AcceptButton = Me.btnBuscar
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.CancelButton = Me.btnSalir
-        Me.ClientSize = New System.Drawing.Size(474, 377)
-        Me.Controls.Add(Me.btnSalir)
-        Me.Controls.Add(Me.btnSiguiente)
-        Me.Controls.Add(Me.btnBuscar)
-        Me.Controls.Add(Me.lblMensaje)
-        Me.Controls.Add(Me.txtTexto)
-        Me.Controls.Add(Me.txtPalabra)
-        Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "frmString"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Busqueda de palabras"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Label1 = New Label()
+        txtPalabra = New TextBox()
+        txtTexto = New TextBox()
+        lblMensaje = New Label()
+        btnBuscar = New Button()
+        btnSiguiente = New Button()
+        btnSalir = New Button()
+        SuspendLayout()
+        ' 
+        ' Label1
+        ' 
+        Label1.Location = New Point(39, 39)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(77, 87)
+        Label1.TabIndex = 0
+        Label1.Text = "Palabra a buscar:"
+        ' 
+        ' txtPalabra
+        ' 
+        txtPalabra.Location = New Point(168, 32)
+        txtPalabra.Margin = New Padding(3, 4, 3, 4)
+        txtPalabra.Name = "txtPalabra"
+        txtPalabra.Size = New Size(114, 27)
+        txtPalabra.TabIndex = 1
+        ' 
+        ' txtTexto
+        ' 
+        txtTexto.Location = New Point(39, 104)
+        txtTexto.Margin = New Padding(3, 4, 3, 4)
+        txtTexto.Multiline = True
+        txtTexto.Name = "txtTexto"
+        txtTexto.ScrollBars = ScrollBars.Vertical
+        txtTexto.Size = New Size(465, 184)
+        txtTexto.TabIndex = 4
+        txtTexto.TabStop = False
+        txtTexto.Text = resources.GetString("txtTexto.Text")
+        ' 
+        ' lblMensaje
+        ' 
+        lblMensaje.BorderStyle = BorderStyle.FixedSingle
+        lblMensaje.Location = New Point(39, 331)
+        lblMensaje.Name = "lblMensaje"
+        lblMensaje.Size = New Size(465, 46)
+        lblMensaje.TabIndex = 5
+        ' 
+        ' btnBuscar
+        ' 
+        btnBuscar.Location = New Point(315, 31)
+        btnBuscar.Margin = New Padding(3, 4, 3, 4)
+        btnBuscar.Name = "btnBuscar"
+        btnBuscar.Size = New Size(86, 31)
+        btnBuscar.TabIndex = 2
+        btnBuscar.Text = "&Buscar"
+        btnBuscar.UseVisualStyleBackColor = True
+        ' 
+        ' btnSiguiente
+        ' 
+        btnSiguiente.Enabled = False
+        btnSiguiente.Location = New Point(418, 31)
+        btnSiguiente.Margin = New Padding(3, 4, 3, 4)
+        btnSiguiente.Name = "btnSiguiente"
+        btnSiguiente.Size = New Size(86, 31)
+        btnSiguiente.TabIndex = 3
+        btnSiguiente.Text = "&Siguiente"
+        btnSiguiente.UseVisualStyleBackColor = True
+        ' 
+        ' btnSalir
+        ' 
+        btnSalir.Location = New Point(418, 420)
+        btnSalir.Margin = New Padding(3, 4, 3, 4)
+        btnSalir.Name = "btnSalir"
+        btnSalir.Size = New Size(86, 31)
+        btnSalir.TabIndex = 6
+        btnSalir.Text = "Salir"
+        btnSalir.UseVisualStyleBackColor = True
+        ' 
+        ' frmString
+        ' 
+        AcceptButton = btnBuscar
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        CancelButton = btnSalir
+        ClientSize = New Size(542, 503)
+        Controls.Add(btnSalir)
+        Controls.Add(btnSiguiente)
+        Controls.Add(btnBuscar)
+        Controls.Add(lblMensaje)
+        Controls.Add(txtTexto)
+        Controls.Add(txtPalabra)
+        Controls.Add(Label1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Margin = New Padding(3, 4, 3, 4)
+        MaximizeBox = False
+        Name = "frmString"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Busqueda de palabras"
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 
