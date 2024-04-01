@@ -96,7 +96,7 @@ Partial Class frmString
         btnSalir.Name = "btnSalir"
         btnSalir.Size = New Size(86, 31)
         btnSalir.TabIndex = 6
-        btnSalir.Text = "Salir"
+        btnSalir.Text = "&Salir"
         btnSalir.UseVisualStyleBackColor = True
         ' 
         ' frmString
